@@ -11,6 +11,9 @@
 
      <!-- CSS Link -->
       <link rel="stylesheet" href="./styles/style.css">
+
+      <!-- font awesome cdn -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
@@ -43,7 +46,7 @@
          <!-- nav bar end -->
 
          <!-- hero section start -->
-          <section class="flex flex-col items-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] w-[1200px] mx-auto">
+          <section class="flex flex-col items-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] w-[1200px] mx-auto mt-4">
             <img src="./assets/logo-dark.png" alt="" class="w-24 mt-5">
             <h2 class="text-4xl font-bold text-white madu my-2">Emergency Service Directory</h2>
             <p class="text-lg font-medium madu text-white mb-5">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
@@ -52,7 +55,317 @@
 
     </header>
 
-    <main>
+    <main class="w-[1200px] mx-auto bg-[#f5fff6]">
+        <!-- card container div -->
+        <div class="card-container grid grid-cols-4 gap-5 w-[1100px] mx-auto py-10">
+            <div class="box shadow-md bg-white rounded-xl">
+                <!-- top div -->
+                 <div class="flex items-center justify-between px-4 pt-6">
+                    <div class="bg-red-100 p-2 rounded-lg">
+                        <img src="./assets/emergency.png" alt="" class="w-7">
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                 </div>
+                <!-- 1st text div -->
+                 <div class="px-4">
+                   <h5 class="text-base madu font-bold">National Emergency Number</h5>
+                   <p class="text-sm madu text-gray-500">National Emergency</p>
+                 </div>
+                 <!-- 2nd text div -->
+                  <div class="px-4 mt-3">
+                    <p class="text-base madu font-bold pl-1">999</p>
+                    <button class="btn rounded-3xl madu text-gray-500 text-sm">All</button>
+                  </div>
+                 <!-- btn container -->
+                  <div class="px-4 mt-3 flex gap-1">
+                    <button class="btn w-1/2 madu font-light"><i class="fa-solid fa-copy"></i>Copy</button>
+                    <button class="btn w-1/2 madu bg-[#00a63e] text-white font-light"><i class="fa-solid fa-phone"></i>Call</button>
+                  </div>
+            </div>
+
+            <div class="box shadow-md bg-white rounded-xl">
+                <!-- top div -->
+                 <div class="flex items-center justify-between px-4 pt-6">
+                    <div class="bg-red-100 p-2 rounded-lg">
+                        <img src="./assets/police.png" alt="" class="w-7">
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                 </div>
+                <!-- 1st text div -->
+                 <div class="px-4">
+                   <h5 class="text-base madu font-bold">Police Helpline Number</h5>
+                   <p class="text-sm madu text-gray-500">Police</p>
+                 </div>
+                 <!-- 2nd text div -->
+                  <div class="px-4 mt-3">
+                    <p class="text-base madu font-bold pl-1">999</p>
+                    <button class="btn rounded-3xl madu text-gray-500 text-sm">Police</button>
+                  </div>
+                 <!-- btn container -->
+                  <div class="px-4 mt-3 flex gap-1">
+                    <button class="btn w-1/2 madu font-light"><i class="fa-solid fa-copy"></i>Copy</button>
+                    <button class="btn w-1/2 madu bg-[#00a63e] text-white font-light"><i class="fa-solid fa-phone"></i>Call</button>
+                  </div>
+            </div>
+
+            <div class="box shadow-md bg-white rounded-xl">
+                <!-- top div -->
+                 <div class="flex items-center justify-between px-4 pt-6">
+                    <div class="bg-red-100 p-2 rounded-lg">
+                        <img src="./assets/fire-service.png" alt="" class="w-7">
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                 </div>
+                <!-- 1st text div -->
+                 <div class="px-4">
+                   <h5 class="text-base madu font-bold">Fire Service Number</h5>
+                   <p class="text-sm madu text-gray-500">Fire Service</p>
+                 </div>
+                 <!-- 2nd text div -->
+                  <div class="px-4 mt-3">
+                    <p class="text-base madu font-bold pl-1">999</p>
+                    <button class="btn rounded-3xl madu text-gray-500 text-sm">Fire</button>
+                  </div>
+                 <!-- btn container -->
+                  <div class="px-4 mt-3 flex gap-1">
+                    <button class="btn w-1/2 madu font-light"><i class="fa-solid fa-copy"></i>Copy</button>
+                    <button class="btn w-1/2 madu bg-[#00a63e] text-white font-light"><i class="fa-solid fa-phone"></i>Call</button>
+                  </div>
+            </div>
+            
+            <div class="row-span-3 shadow-md bg-white rounded-xl" id="box-4">
+              <!-- top div -->
+               <div class="flex items-center justify-between mx-3 mt-4">
+                  <p class="madu font-medium"><i class="fa-regular fa-clock"></i>Call History</p>
+                  <button class="btn rounded-3xl bg-[#00A63E]"><p class="inter font-light text-white">Clear</p></button>
+               </div>
+
+               <!-- Fire Service div -->
+               <div class="mx-3 bg-[#fafafa] p-2 rounded-lg mt-3 flex items-center justify-between">
+                  <div>
+                    <p class="madu font-semibold">Fire Service Number</p>
+                    <p class="madu font-extralight text-gray-500">999</p>
+                  </div>
+
+                  <div>
+                    <time datetime="lo">p</time>
+                  </div>
+               </div>
+
+               <!-- National div -->
+               <div class="mx-3 bg-[#fafafa] p-2 rounded-lg mt-3 flex items-center justify-between">
+                  <div>
+                    <p class="madu font-semibold">National Emergency Number</p>
+                    <p class="madu font-extralight text-gray-500">1994-999999</p>
+                  </div>
+
+                  <div>
+                    <time datetime="lo">p</time>
+                  </div>
+               </div>
+
+               <!-- Fire Service2 div -->
+               <div class="mx-3 bg-[#fafafa] p-2 rounded-lg mt-3 flex items-center justify-between">
+                  <div>
+                    <p class="madu font-semibold">Fire Service Number</p>
+                    <p class="madu font-extralight text-gray-500">999</p>
+                  </div>
+
+                  <div>
+                    <time datetime="lo">p</time>
+                  </div>
+               </div>
+
+               <!-- Bangaldesh Rail div -->
+               <div class="mx-3 bg-[#fafafa] p-2 rounded-lg mt-3 flex items-center justify-between">
+                  <div>
+                    <p class="madu font-semibold">Bangladesh Railway Helpline</p>
+                    <p class="madu font-extralight text-gray-500">999</p>
+                  </div>
+
+                  <div>
+                    <time datetime="lo">p</time>
+                  </div>
+               </div>
+
+               <!-- Fire Service3 div -->
+               <div class="mx-3 bg-[#fafafa] p-2 rounded-lg mt-3 flex items-center justify-between">
+                  <div>
+                    <p class="madu font-semibold">Fire Service Number</p>
+                    <p class="madu font-extralight text-gray-500">999</p>
+                  </div>
+
+                  <div>
+                    <time datetime="lo">p</time>
+                  </div>
+               </div>
+
+               <!-- Anti-corruption div -->
+               <div class="mx-3 bg-[#fafafa] p-2 rounded-lg mt-3 flex items-center justify-between">
+                  <div>
+                    <p class="madu font-semibold">Anti-Corruption Helpline</p>
+                    <p class="madu font-extralight text-gray-500">999</p>
+                  </div>
+
+                  <div>
+                    <time datetime="lo">p</time>
+                  </div>
+               </div>
+
+            </div>
+
+           <div class="box shadow-md bg-white rounded-xl">
+                <!-- top div -->
+                 <div class="flex items-center justify-between px-4 pt-6">
+                    <div class="bg-red-100 p-2 rounded-lg">
+                        <img src="./assets/ambulance.png" alt="" class="w-7">
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                 </div>
+                <!-- 1st text div -->
+                 <div class="px-4">
+                   <h5 class="text-base madu font-bold">Ambulance Service</h5>
+                   <p class="text-sm madu text-gray-500">Ambulance</p>
+                 </div>
+                 <!-- 2nd text div -->
+                  <div class="px-4 mt-3">
+                    <p class="text-base madu font-bold pl-1">1994-999999</p>
+                    <button class="btn rounded-3xl madu text-gray-500 text-sm">Health</button>
+                  </div>
+                 <!-- btn container -->
+                  <div class="px-4 mt-3 flex gap-1">
+                    <button class="btn w-1/2 madu font-light"><i class="fa-solid fa-copy"></i>Copy</button>
+                    <button class="btn w-1/2 madu bg-[#00a63e] text-white font-light"><i class="fa-solid fa-phone"></i>Call</button>
+                  </div>
+            </div>
+            
+            <div class="box shadow-md bg-white rounded-xl">
+                <!-- top div -->
+                 <div class="flex items-center justify-between px-4 pt-6">
+                    <div class="bg-red-100 p-2 rounded-lg">
+                        <img src="./assets/emergency.png" alt="" class="w-7">
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                 </div>
+                <!-- 1st text div -->
+                 <div class="px-4">
+                   <h5 class="text-base madu font-bold">Women & Child Helpline</h5>
+                   <p class="text-sm madu text-gray-500">Women & Child Helpline</p>
+                 </div>
+                 <!-- 2nd text div -->
+                  <div class="px-4 mt-3">
+                    <p class="text-base madu font-bold pl-1">109</p>
+                    <button class="btn rounded-3xl madu text-gray-500 text-sm">Help</button>
+                  </div>
+                 <!-- btn container -->
+                  <div class="px-4 mt-3 flex gap-1">
+                    <button class="btn w-1/2 madu font-light"><i class="fa-solid fa-copy"></i>Copy</button>
+                    <button class="btn w-1/2 madu bg-[#00a63e] text-white font-light"><i class="fa-solid fa-phone"></i>Call</button>
+                  </div>
+            </div>
+
+            <div class="box shadow-md bg-white rounded-xl">
+                <!-- top div -->
+                 <div class="flex items-center justify-between px-4 pt-6">
+                    <div class="bg-red-100 p-2 rounded-lg">
+                        <img src="./assets/emergency.png" alt="" class="w-7">
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                 </div>
+                <!-- 1st text div -->
+                 <div class="px-4">
+                   <h5 class="text-base madu font-bold">Anti-Corruption Helpline</h5>
+                   <p class="text-sm madu text-gray-500">Anti-Corruption</p>
+                 </div>
+                 <!-- 2nd text div -->
+                  <div class="px-4 mt-3">
+                    <p class="text-base madu font-bold pl-1">106</p>
+                    <button class="btn rounded-3xl madu text-gray-500 text-sm">Govt.</button>
+                  </div>
+                 <!-- btn container -->
+                  <div class="px-4 mt-3 flex gap-1">
+                    <button class="btn w-1/2 madu font-light"><i class="fa-solid fa-copy"></i>Copy</button>
+                    <button class="btn w-1/2 madu bg-[#00a63e] text-white font-light"><i class="fa-solid fa-phone"></i>Call</button>
+                  </div>
+            </div>
+
+            <div class="box shadow-md bg-white rounded-xl">
+                <!-- top div -->
+                 <div class="flex items-center justify-between px-4 pt-6">
+                    <div class="bg-red-100 p-2 rounded-lg">
+                        <img src="./assets/emergency.png" alt="" class="w-7">
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                 </div>
+                <!-- 1st text div -->
+                 <div class="px-4">
+                   <h5 class="text-base madu font-bold">Electricity Helpline</h5>
+                   <p class="text-sm madu text-gray-500">Electricity Outage</p>
+                 </div>
+                 <!-- 2nd text div -->
+                  <div class="px-4 mt-3">
+                    <p class="text-base madu font-bold pl-1">16216</p>
+                    <button class="btn rounded-3xl madu text-gray-500 text-sm">Electricity</button>
+                  </div>
+                 <!-- btn container -->
+                  <div class="px-4 mt-3 flex gap-1">
+                    <button class="btn w-1/2 madu font-light"><i class="fa-solid fa-copy"></i>Copy</button>
+                    <button class="btn w-1/2 madu bg-[#00a63e] text-white font-light"><i class="fa-solid fa-phone"></i>Call</button>
+                  </div>
+            </div>
+
+            <div class="box shadow-md bg-white rounded-xl">
+                <!-- top div -->
+                 <div class="flex items-center justify-between px-4 pt-6">
+                    <div class="bg-red-100 p-2 rounded-lg">
+                        <img src="./assets/brac.png" alt="" class="w-7">
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                 </div>
+                <!-- 1st text div -->
+                 <div class="px-4">
+                   <h5 class="text-base madu font-bold">Brac Helpline</h5>
+                   <p class="text-sm madu text-gray-500">Brac</p>
+                 </div>
+                 <!-- 2nd text div -->
+                  <div class="px-4 mt-3">
+                    <p class="text-base madu font-bold pl-1">16445</p>
+                    <button class="btn rounded-3xl madu text-gray-500 text-sm">NGO</button>
+                  </div>
+                 <!-- btn container -->
+                  <div class="px-4 mt-3 flex gap-1">
+                    <button class="btn w-1/2 madu font-light"><i class="fa-solid fa-copy"></i>Copy</button>
+                    <button class="btn w-1/2 madu bg-[#00a63e] text-white font-light"><i class="fa-solid fa-phone"></i>Call</button>
+                  </div>
+            </div>
+
+            <div class="box shadow-md bg-white rounded-xl">
+                <!-- top div -->
+                 <div class="flex items-center justify-between px-4 pt-6">
+                    <div class="bg-red-100 p-2 rounded-lg">
+                        <img src="./assets/Bangladesh-Railway.png" alt="" class="w-7">
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                 </div>
+                <!-- 1st text div -->
+                 <div class="px-4">
+                   <h5 class="text-base madu font-bold">Bangladesh Railway Helpline</h5>
+                   <p class="text-sm madu text-gray-500">Bangladesh Railway</p>
+                 </div>
+                 <!-- 2nd text div -->
+                  <div class="px-4 mt-3">
+                    <p class="text-base madu font-bold pl-1">163</p>
+                    <button class="btn rounded-3xl madu text-gray-500 text-sm">Travel</button>
+                  </div>
+                 <!-- btn container -->
+                  <div class="px-4 mt-3 flex gap-1">
+                    <button class="btn w-1/2 madu font-light"><i class="fa-solid fa-copy"></i>Copy</button>
+                    <button class="btn w-1/2 madu bg-[#00a63e] text-white font-light"><i class="fa-solid fa-phone"></i>Call</button>
+                  </div>
+            </div>
+            
+
+        </div>
 
     </main>
 
