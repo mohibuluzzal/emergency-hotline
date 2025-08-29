@@ -28,7 +28,7 @@
   <body>
     <header>
       <!-- nav bar start -->
-      <nav class="w-[1100px] mx-auto flex justify-between madu">
+      <nav class="max-w-[1100px] mx-auto flex justify-between madu">
         <!-- Left div -->
         <div class="flex items-center">
           <!-- img div -->
@@ -68,7 +68,7 @@
 
       <!-- hero section start -->
       <section
-        class="flex flex-col items-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] w-[1200px] mx-auto mt-4"
+        class="flex flex-col items-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] max-w-[1200px] mx-auto mt-4"
       >
         <img src="./assets/logo-dark.png" alt="" class="w-24 mt-5" />
         <h2 class="text-4xl font-bold text-white madu my-2">
@@ -82,7 +82,7 @@
       <!-- hero section end -->
     </header>
 
-    <main class="w-[1200px] mx-auto bg-[#f5fff6]">
+    <main class="max-w-[1200px] mx-auto bg-[#f5fff6]">
       <!-- card container div -->
       <div
         class="card-container grid grid-cols-4 gap-5 w-[1100px] mx-auto py-10"
@@ -190,10 +190,12 @@
             <p class="madu font-medium">
               <i class="fa-regular fa-clock"></i>Call History
             </p>
-            <button class="btn rounded-3xl bg-[#00A63E]">
+            <button id="clearHistoryBtn" class="btn rounded-3xl bg-[#00A63E]">
               <p class="inter font-light text-white">Clear</p>
             </button>
           </div>
+
+          
         </div>
 
         <!-- Card-box-5 -->
